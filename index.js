@@ -1,4 +1,4 @@
-var API_BASE_URL ="http://api.fixer.io/latest";
+var API_BASE_URL ="https://api.fixer.io/latest";
 
 var CUR_ONE= "USD"
 var CUR_TWO= "EUR"
