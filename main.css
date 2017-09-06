@@ -1,0 +1,65 @@
+*body {
+  box-sizing: border-box;
+  border: 2px black solid;
+}
+
+.header {
+  text-align: center;
+  padding-top: 30px;
+  border: 2px #E5E7E9 solid;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+.allCurrencies {
+  border: 2px solid #E5E7E9;
+  align: left;
+  width: 30%;
+  height: 500px;
+  display: inline-block;
+  float: left;
+  background-color: #CACFD2
+}
+
+.formContainer {
+  display: inline-block;
+  background-color: #85C1E9;
+  border: black solid 2px;
+  width: 68%;
+  height: 500px;
+  float: right;
+  border: 2px #E5E7E9 solid;
+  margin-bottom: 15px
+}
+
+.formOne {
+  margin-top: 15px
+}
+
+.formOne, .formTwo, .amount {
+  background-color: #1ABC9C;
+  height: auto;
+  padding: 2px 0px 12px 30px;
+  border-radius: 15px;
+  margin-left: 15px;
+  width: 225px;
+  border: 2px #E5E7E9 solid
+}
+
+#currencyOne, #currencyTwo, {
+  border: 2px black solid;
+  margin-left: 30px
+}
+
+.amount {
+  margin-top: 30px;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+.globe {
+  float: right
+}
+
+.results {
+  float: right
+}

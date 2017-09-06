@@ -1,0 +1,26 @@
+
+var API_BASE_URL = "http://api.fixer.io/latest?symbols=USD,GBP"
+
+console.log("ready")
+//
+var CUR_ONE = document.getElementById('currancyOne').value
+var CUR_TWO = ".currencyTwo.value"
+console.log(CUR_ONE)
+console.log(CUR_TWO)
+
+//get API
+$(function() {
+  $(".search").on("click", function(event) {
+    event.preventDefault();
+
+    console.log(CUR_ONE + "  " + CUR_TWO)
+  })
+})
+
+//  $.ajax(API_BASE_URL + 'latest?',{
+//    data: {
+//      base ="USD",
+//      symbols= CUR_ONE + "," + CUR_TWO
+//    },
+    //complete: function ()
+// })

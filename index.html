@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <title>Currency Exchange</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <h1 class="header">Currency Converter</h1>
+
+  <container class="allCurrencies">
+
+  </container>
+
+  <div class="formContainer">
+    <form action="">
+
+      <section class="formOne">
+        <h3>Currency 1:</h3>
+        <select id= "currencyOne">
+          <option value="USD" selected>USD</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+          <option value="BRL">BRL</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="MXN">MXN</option>
+        </select>
+      </section> <br>
+
+      <section class="formTwo">
+        <h3> Currency 2:</h3>
+        <select id="currencyTwo">
+          <option value="USD">USD</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR" selected>EUR</option>
+          <option value="BRL">BRL</option>
+          <option value="GBP">GBP</option>
+          <option value="JPY">JPY</option>
+          <option value="MXN">MXN</option>
+        </select>
+      </section> <br>
+      <span class="amount">
+        <label for="amountOne">Amount:</label>
+        <input id="amountOne" type="number" placeholder="1-1000" min="1" max="1000">
+        <button type="button" class="search">Click me!</button>
+      </span>
+        <img class="globe" src="http://pngimg.com/uploads/globe/globe_PNG46.png">
+    </form>
+
+
+  <div class="results">
+    <span class="rate">    </span></br>
+    <span class="calcAmount"> </span>
+    <span class="graph">   </span>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
