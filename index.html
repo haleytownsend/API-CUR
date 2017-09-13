@@ -1,61 +1,83 @@
 <!DOCTYPE>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
   <title>Currency Exchange</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="float-grid.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
 </head>
 
+<header>Currency Converter</header>
+
 <body>
-  <h1 class="header">Currency Converter</h1>
 
-  <container class="allCurrencies">
-
-  </container>
-
-  <div class="formContainer">
-    <form action="">
-
-      <section class="formOne">
-        <h3>Currency 1:</h3>
-        <select id= "currencyOne">
-          <option value="USD" selected>USD</option>
-          <option value="CAD">CAD</option>
-          <option value="EUR">EUR</option>
-          <option value="BRL">BRL</option>
-          <option value="GBP">GBP</option>
-          <option value="JPY">JPY</option>
-          <option value="MXN">MXN</option>
-        </select>
-      </section> <br>
-
-      <section class="formTwo">
-        <h3> Currency 2:</h3>
-        <select id="currencyTwo">
-          <option value="USD">USD</option>
-          <option value="CAD">CAD</option>
-          <option value="EUR" selected>EUR</option>
-          <option value="BRL">BRL</option>
-          <option value="GBP">GBP</option>
-          <option value="JPY">JPY</option>
-          <option value="MXN">MXN</option>
-        </select>
-      </section> <br>
-      <span class="amount">
-        <label for="amountOne">Amount:</label>
-        <input id="amountOne" type="number" placeholder="1-1000" min="1" max="1000">
-        <button type="button" class="search">Click me!</button>
-      </span>
-        <img class="globe" src="http://pngimg.com/uploads/globe/globe_PNG46.png">
-    </form>
-
-
-  <div class="results">
-    <span class="rate">    </span></br>
-    <span class="calcAmount"> </span>
-    <span class="graph">   </span>
+<div class="currencyBar">
+  <div class="USD">$1.00 USD =</div>
+  <div class="allCurrencies">
+    <div class="currency" id="">CAD</div>
+    <div class="rateBar" id="CAD">1.00</div>
+    <div class="currency" id="EUR">EUR</div>
+    <div class="rateBar" id="">1.00</div>
+    <div class="currency" id="BRL">BRL</div>
+    <div class="rateBar" id="">1.00</div>
+    <div class="currency" id="CAD">CAD</div>
+    <div class="rateBar" id="">1.00</div>
+    <div class="currency" id="EUR">EUR</div>
+    <div class="rateBar" id="">1.00</div>
+    <div class="currency" id="BRL">BRL</div>
+    <div class="rateBar" id="">1.00</div>
   </div>
 </div>
+
+  <main
+    <div class="formContainer">
+
+      <form action="">
+
+        <section class="amount">
+          <label for="amountOne">Amount:</label>
+          <input id="amountOne" type="number" placeholder=" 1-1000" min="1" max="1000" default=1>
+        </section>
+
+        <section class="form">
+          <h3>Starting Currency</h3>
+          <select  class="CUR" id= "currencyOne">
+            <option value="USD" selected>USD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="BRL">BRL</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="MXN">MXN</option>
+          </select>
+        </section>
+
+        <button type="button" class="search">Convert></button>
+
+        <section class="form">
+          <h3> Ending Currency</h3>
+          <select class="CUR" id="currencyTwo">
+            <option value="USD">USD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR" selected>EUR</option>
+            <option value="BRL">BRL</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="MXN">MXN</option>
+          </select>
+        </section> <br>
+
+      </form>
+
+    <section class="results">
+      <span class="rate">    </span></br>
+      <span class="calcAmount"> </span>
+      <span class="graph">   </span>
+    </section>
+
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="index.js"></script>

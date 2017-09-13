@@ -3,25 +3,42 @@ var API_BASE_URL ="https://api.fixer.io/latest";
 var CUR_ONE= "USD"
 var CUR_TWO= "EUR"
 
+var amt = "1"
+
+var CUR_BAR_BASE= "USD"
+var ALL_CURRENCIES = {
+  currency: [
+    "USD",
+    "CAD",
+    "EUR",
+    "BRL",
+    "GBP",
+    "JPY",
+    "MXN"
+  ]}
+
 $(document).ready(function() {
   console.log("ready");
-  //event.preventDefault();
+
+  var a=([ALL_CURRENCIES.currency[1]])
+  console.log(a)
+  var b=(searchAPI("USD", a))
 
   $(`#currencyOne`).change(function() {
     var el = document.getElementById("currencyOne");
     CUR_ONE = el.options[el.selectedIndex].value;
-    console.log(CUR_ONE);
   });
+
   $(`#currencyTwo`).change(function() {
     var el = document.getElementById("currencyTwo");
     CUR_TWO = el.options[el.selectedIndex].value;
-    console.log(CUR_TWO);
   });
+
   $(`#amountOne`).change(function() {
     var el = document.getElementById("amountOne");
     AMOUNT_ONE = el.value;
-    console.log(AMOUNT_ONE);
   });
+
   $('.search').on("click", function(event) {
     event.preventDefault();
     searchAPI(CUR_ONE, CUR_TWO)
@@ -29,7 +46,7 @@ $(document).ready(function() {
       displayResults(data.rates[CUR_TWO])
     })
   });
-})
+});
 
 function searchAPI(base, symbols) {
   return $.ajax(API_BASE_URL, {
@@ -42,17 +59,10 @@ function searchAPI(base, symbols) {
 
 //replace results in .rate div on HTML
 function displayResults(rate) {
-  $('.rate').html('rate: ' + rate);
-  var amt= $(`#amountOne`).val()
-  console.log(amt)
-  var roundedRate =Math.round(rate*100) / 100;
-  var finalAmount = amt * roundedRate;
+  var roundedRate =(rate*100)/100;
   console.log(roundedRate)
-  // $('.calcAmount').html('You will need ' + rate*amt + " " + CUR_TWO + " to equal " + amt + " " + CUR_ONE)
+  $('.rate').html('rate: ' + roundedRate +'%');
+  var amt= $(`#amountOne`).val()
+  var finalAmount = Math.round(amt * roundedRate);
   $('.calcAmount').html(`You will need ${finalAmount} ${CUR_TWO} to equal ${amt} ${CUR_ONE}`)
-}
-
-//replace all currencies in the left container
-function allCurrencies() {
-  $('.allCurrencies').html()
 }

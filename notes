@@ -1,26 +1,25 @@
 
-var API_BASE_URL = "http://api.fixer.io/latest?symbols=USD,GBP"
+function findAndReplace(allCurrencies) {
+  var CUR_OBJECT = document.getElementById('id');
 
-console.log("ready")
-//
-var CUR_ONE = document.getElementById('currancyOne').value
-var CUR_TWO = ".currencyTwo.value"
-console.log(CUR_ONE)
-console.log(CUR_TWO)
+  for (var i = 1, i< [ALL_CURRENCIES].currency.length; i++) {
+    if ([CUR_OBJECT].currency[i].matches('#id')) {
+      $('.rateBar').html("test")
+    }
+  }
+}
 
-//get API
-$(function() {
-  $(".search").on("click", function(event) {
-    event.preventDefault();
 
-    console.log(CUR_ONE + "  " + CUR_TWO)
-  })
-})
 
-//  $.ajax(API_BASE_URL + 'latest?',{
-//    data: {
-//      base ="USD",
-//      symbols= CUR_ONE + "," + CUR_TWO
-//    },
-    //complete: function ()
-// })
+
+
+console.log(allCurrencies);
+$('.rateBar').html(test);
+console.log("test is working");
+var length = [ALL_CURRENCIES].currency.length
+console.log(length)
+var test;
+var i= [ALL_CURRENCIES].currency
+whiile (i; i<length; i++) {
+    test[i]==('.currency')) {
+    console.log("now it really works")
