@@ -5,7 +5,6 @@
   <title>Currency Exchange</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="float-grid.css">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
 </head>
 
@@ -18,29 +17,26 @@
   <div class="allCurrencies">
     <div class="currency" id="">CAD</div>
     <div class="rateBar" id="CAD">1.00</div>
-    <div class="currency" id="EUR">EUR</div>
-    <div class="rateBar" id="">1.00</div>
-    <div class="currency" id="BRL">BRL</div>
-    <div class="rateBar" id="">1.00</div>
-    <div class="currency" id="CAD">CAD</div>
-    <div class="rateBar" id="">1.00</div>
-    <div class="currency" id="EUR">EUR</div>
-    <div class="rateBar" id="">1.00</div>
-    <div class="currency" id="BRL">BRL</div>
-    <div class="rateBar" id="">1.00</div>
+    <div class="currency" id="">EUR</div>
+    <div class="rateBar" id="EUR">1.00</div>
+    <div class="currency" id="">BRL</div>
+    <div class="rateBar" id="BRL">1.00</div>
+    <div class="currency" id="">GBP</div>
+    <div class="rateBar" id="GBP">1.00</div>
+    <div class="currency" id="">JPY</div>
+    <div class="rateBar" id="JPY">1.00</div>
+    <div class="currency" id="">MXN</div>
+    <div class="rateBar" id="MXN">1.00</div>
   </div>
 </div>
 
   <main
     <div class="formContainer">
-
       <form action="">
-
         <section class="amount">
           <label for="amountOne">Amount:</label>
           <input id="amountOne" type="number" placeholder=" 1-1000" min="1" max="1000" default=1>
         </section>
-
         <section class="form">
           <h3>Starting Currency</h3>
           <select  class="CUR" id= "currencyOne">
@@ -53,9 +49,7 @@
             <option value="MXN">MXN</option>
           </select>
         </section>
-
         <button type="button" class="search">Convert></button>
-
         <section class="form">
           <h3> Ending Currency</h3>
           <select class="CUR" id="currencyTwo">
@@ -68,20 +62,14 @@
             <option value="MXN">MXN</option>
           </select>
         </section> <br>
-
       </form>
-
     <section class="results">
       <span class="rate">    </span></br>
       <span class="calcAmount"> </span>
-      <span class="graph">   </span>
     </section>
-
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
-
 </body>
 
 </html>
