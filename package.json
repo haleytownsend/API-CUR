@@ -1,0 +1,7 @@
+{
+  "name": "API-Hack-CUR",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.5.2"
+  }
+}
