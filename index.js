@@ -42,7 +42,7 @@ $(document).ready(function() {
       $amountEl.keyup(function () {
         var elValue = $amountEl.val()
         console.log(elValue)
-        var amount = parseInt(elValue)
+        var amount = parseFloat(elValue)
         console.log(amount)
         updateConvertedAmounts(amount)
       })
