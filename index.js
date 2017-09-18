@@ -8,6 +8,7 @@ function convertAmount (amount, currency) {
 }
 
 function updateConvertedAmounts (amountInUsd) {
+  amountInUsd = amountInUsd || "1"
   console.log('updateConvertedAmounts executing')
   // - convert USD amount to other 6 currencies (using CONVERSION_RATES)
   // - be able to update HTMLs contents of 6 elements
@@ -34,6 +35,7 @@ function loadConversionRates () {
 
 
 $(document).ready(function() {
+
   loadConversionRates()
     .then(function () {
       var $amountEl = $('#amount')
