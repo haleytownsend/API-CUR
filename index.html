@@ -2,74 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Currency Exchange</title>
+  <title>Currency Converter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css">
+  <link  rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
 </head>
 
-<header>Currency Converter</header>
-
-<body>
-
-<div class="currencyBar">
-  <div class="USD">$1.00 USD =</div>
-  <div class="allCurrencies">
-    <div class="currency" id="">CAD</div>
-    <div class="rateBar" id="CAD">1.00</div>
-    <div class="currency" id="">EUR</div>
-    <div class="rateBar" id="EUR">1.00</div>
-    <div class="currency" id="">BRL</div>
-    <div class="rateBar" id="BRL">1.00</div>
-    <div class="currency" id="">GBP</div>
-    <div class="rateBar" id="GBP">1.00</div>
-    <div class="currency" id="">JPY</div>
-    <div class="rateBar" id="JPY">1.00</div>
-    <div class="currency" id="">MXN</div>
-    <div class="rateBar" id="MXN">1.00</div>
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <h1 class="title">
+            Currency Converter
+          </h1>
+          <p class="subtitle">
+            Convert a <strong>$USD</strong> amount to the currencies below!
+          </p>
+          <div class="field currency-controls">
+            <div class="control">
+              <input type="number" id="amount" class="input" placeholder="Enter your initial amount here">
+            </div>
+            <p class="help"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-  <main
-    <div class="formContainer">
-      <form action="">
-        <section class="amount">
-          <label for="amountOne">Amount:</label>
-          <input id="amountOne" type="number" placeholder=" 1-1000" min="1" max="1000" default=1>
-        </section>
-        <section class="form">
-          <h3>Starting Currency</h3>
-          <select  class="CUR" id= "currencyOne">
-            <option value="USD" selected>USD</option>
-            <option value="CAD">CAD</option>
-            <option value="EUR">EUR</option>
-            <option value="BRL">BRL</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
-            <option value="MXN">MXN</option>
-          </select>
-        </section>
-        <button type="button" class="search">Convert></button>
-        <section class="form">
-          <h3> Ending Currency</h3>
-          <select class="CUR" id="currencyTwo">
-            <option value="USD">USD</option>
-            <option value="CAD">CAD</option>
-            <option value="EUR" selected>EUR</option>
-            <option value="BRL">BRL</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
-            <option value="MXN">MXN</option>
-          </select>
-        </section> <br>
-      </form>
-    <section class="results">
-      <span class="rate">    </span></br>
-      <span class="calcAmount"> </span>
-    </section>
-  </div>
+<section class="hero is-light">
+  <div class="columns">
+    <div class="column is-two-thirds is-offset-2">
+      <div class="columns">
+        <div class="column has-text-centered">
+          <div class="content">
+            <h3 class="title">CAD</h3>
+            <p class="amount-in-CAD"</p>
+          </div><!-- /.content -->
+        </div><!-- /.column -->
+        <div class="column has-text-centered">
+          <div class="content">
+            <h3 class="title">EUR</h3>
+            <p class="amount-in-EUR"</p>
+          </div><!-- /.content -->
+        </div><!-- /.column -->
+        <div class="column has-text-centered">
+          <div class="content">
+            <h3 class="title">BRL</h3>
+            <p class="amount-in-BRL"</p>
+          </div><!-- /.content -->
+        </div><!-- /.column -->
+        <div class="column has-text-centered">
+          <div class="content">
+            <h3 class="title">GBP</h3>
+            <p class="amount-in-GBP"</p>
+          </div><!-- /.content -->
+        </div><!-- /.column -->
+        <div class="column has-text-centered">
+          <div class="content">
+            <h3 class="title">JPY</h3>
+            <p class="amount-in-JPY"</p>
+          </div><!-- /.content -->
+        </div><!-- /.column -->
+        <div class="column has-text-centered">
+          <div class="content">
+            <h3 class="title">MXN</h3>
+            <p class="amount-in-MXN"</p>
+          </div><!-- /.content -->
+        </div><!-- /.column -->
+      </div><!-- /.columns -->
+    </div><!-- /.column.is-two-thirds -->
+  </div><!-- /.columns -->
+</section>
+<section class="map"><section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
-</body>
 
+</body>
 </html>

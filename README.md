@@ -1,7 +1,7 @@
 Currency Converter
 
-The bar on top should auto load with current conversion rates.
+The page will load with a header and simple instructions to the user to simply type a number
+they want converted from USD to the currencies listed below the header.
+As the amount is typed into the bar, the results will update and be displayed below.
 
-Chose a beginning currency from the drop down box. Type an amount into the amount box. Chose an ending currency from the drop down box. Click the convert button. The results will be displayed below.
-
-Tech: HTML/CSS/JavaScript/jQuery
+Tech: HTML/JavaScript/jQuery
