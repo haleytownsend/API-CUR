@@ -2,3 +2,28 @@
   background-image: url("map.jpg");
   height: 75%
 }
+
+.hero {
+  background-color: #92C0C2
+}
+
+.subtitle {
+  padding-top: 20px
+}
+
+.content {
+margin: 20px 0 10px 0
+}
+
+div.columns {
+  vertical-align: center;
+  padding-bottom: 2px
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 33%;
+    margin-top: 20px;
+    display:inline-block;
+  }
+}
